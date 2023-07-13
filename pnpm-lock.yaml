@@ -5,6 +5,7 @@ specifiers:
   '@fontsource/manrope': ^5.0.5
   '@sveltejs/adapter-auto': ^2.0.0
   '@sveltejs/kit': ^1.20.4
+  animate.css: ^4.1.1
   autoprefixer: ^10.4.14
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
@@ -23,6 +24,7 @@ specifiers:
 dependencies:
   '@fontsource/jetbrains-mono': 5.0.5
   '@fontsource/manrope': 5.0.5
+  animate.css: 4.1.1
   reveal.js: 4.5.0
 
 devDependencies:
@@ -490,6 +492,10 @@ packages:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
     dev: true
+
+  /animate.css/4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
+    dev: false
 
   /ansi-regex/5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}

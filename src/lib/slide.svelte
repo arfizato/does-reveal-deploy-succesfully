@@ -5,11 +5,16 @@
 
 /* --------------------------------- plugins -------------------------------- */
 	import Reveal from 'reveal.js';
+
+	import Simplemenu from './revealjs-plugins/simplemenu/plugin/simplemenu/simplemenu.esm.js';
+	import Verticator from './revealjs-plugins/verticator/plugin/verticator/verticator.esm.js';
 /* ------------------------------- stylesheets ------------------------------ */
     import 'reveal.js/dist/reveal.css';
     import 'reveal.js/dist/theme/black.css';
     import 'reveal.js/plugin/highlight/monokai.css';
 
+	import './revealjs-plugins/verticator/plugin/verticator/verticator.css';
+	import './revealjs-plugins/simplemenu/plugin/simplemenu/simplemenu.css';
 /* -------------------------------- functions ------------------------------- */
 
 /* ---------------------------- Liyfecycle Events --------------------------- */
@@ -24,7 +29,7 @@
 		});
 
 		deck.initialize({
-			// plugins: [Markdown, Highlight, Notes, Animate, Verticator, Simplemenu],
+			plugins: [ Verticator, Simplemenu],//Markdown, Highlight, Notes, Animate,
 			// animated: {
 			// 	H1: { animated: 'slideInDown' },
 			// 	IMG: { animated: 'backInDown', repeat: 'repeat-2', speed: 'slower' },
