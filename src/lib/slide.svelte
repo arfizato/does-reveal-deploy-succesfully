@@ -15,8 +15,8 @@
     import 'reveal.js/plugin/highlight/monokai.css';
 	import 'animate.css';
 
-	import './revealjs-plugins/verticator/plugin/verticator/verticator.css';
-	import './revealjs-plugins/simplemenu/plugin/simplemenu/simplemenu.css';
+	import verticatorCssPath from './revealjs-plugins/verticator/plugin/verticator/verticator.css?url';
+	// import './revealjs-plugins/simplemenu/plugin/simplemenu/simplemenu.css';
 /* -------------------------------- functions ------------------------------- */
 
 /* ---------------------------- Liyfecycle Events --------------------------- */
@@ -33,7 +33,8 @@
 		deck.initialize({
 			plugins: [ Animate, Verticator, Simplemenu],//Markdown, Highlight, Notes,
 			verticator: {
-				csspath: './revealjs-plugins/verticator/plugin/verticator/verticator.css'
+				csspath: verticatorCssPath,
+				inversecolor: "#fff"
 			},
 			simplemenu: {
 				csspath: false
