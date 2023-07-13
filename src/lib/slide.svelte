@@ -30,18 +30,19 @@
 
 		deck.initialize({
 			plugins: [ Verticator, Simplemenu],//Markdown, Highlight, Notes, Animate,
+			verticator: {
+				csspath: './revealjs-plugins/verticator/plugin/verticator/verticator.css'
+			},
+			simplemenu: {
+				csspath: false
+			}
+			
 			// animated: {
 			// 	H1: { animated: 'slideInDown' },
 			// 	IMG: { animated: 'backInDown', repeat: 'repeat-2', speed: 'slower' },
 			// 	P: { animated: 'bounceInRight', speed: 'fast' },
 			// 	UL: { animated: 'jello', repeat: 'infinite', speed: 'slower' }
 			// },
-			// verticator: {
-			// 	csspath: 'reveal.js/plugin/verticator/plugin/verticator/verticator.css'
-			// },
-			// simplemenu: {
-			// 	csspath: false
-			// }
 		});
 	});
 </script>
